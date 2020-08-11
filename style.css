@@ -1,0 +1,32 @@
+/* .ball {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  position: absolute;
+  cursor: pointer;
+} */
+
+.ball.ball_color-red {
+  border-radius: 100%;
+  width: 130px;
+  height: 130px;
+  background-color: red;
+  transition: background-color 1s linear;
+}
+
+.ball.ball_color-red:hover {
+  background-color: #3f51b5;
+}
+
+.ball.ball_color-yellow {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  transition: background-color 1s linear;
+}
+
+.ball.ball_color-yellow:hover {
+  background-color: #3f51b5;
+}
