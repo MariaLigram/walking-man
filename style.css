@@ -6,27 +6,72 @@
   position: absolute;
   cursor: pointer;
 } */
-
-.ball.ball_color-red {
-  border-radius: 100%;
+body {
+  margin: 0; /* Убираем отступы */
+}
+.ball {
+  text-align: center;
+  color: #5e444e;
+  font-size: 20px;
+  line-height: 130px;
+  border: 3px dotted rgb(61, 55, 55);
+  position: fixed;
+  border-radius: 65%;
   width: 130px;
   height: 130px;
-  background-color: red;
-  transition: background-color 1s linear;
+  bottom: 15px;
+}
+.ball_color-red {
+  background-color: rgb(255, 122, 122);
+  left: 15px;
+  -webkit-animation: jump 3s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite;
+  animation: jump 3s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite;
 }
 
-.ball.ball_color-red:hover {
-  background-color: #3f51b5;
+.ball_color-yellow {
+  background-color: rgb(255, 255, 191);
+  left: 160px;
+  -webkit-animation: jump 2s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite;
+  animation: jump 2s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite;
 }
 
-.ball.ball_color-yellow {
-  border-radius: 100%;
-  width: 300px;
-  height: 300px;
-  background-color: yellow;
-  transition: background-color 1s linear;
+/* .ball:hover {
+} */
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-400px);
+    transform: translateY(-400px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
 }
 
-.ball.ball_color-yellow:hover {
-  background-color: #3f51b5;
+@keyframes jump {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-400px);
+    transform: translateY(-400px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
 }
