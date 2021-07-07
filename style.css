@@ -24,19 +24,22 @@ body {
 .ball_color-red {
   background-color: rgb(255, 122, 122);
   left: 15px;
-  -webkit-animation: jump 3s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite;
-  animation: jump 3s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite;
 }
 
 .ball_color-yellow {
   background-color: rgb(255, 255, 191);
   left: 160px;
-  -webkit-animation: jump 2s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite;
-  animation: jump 2s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite;
 }
 
-/* .ball:hover {
-} */
+.ball_color-red:hover {
+  -webkit-animation: jump 5s cubic-bezier(0.8, 0.8, 0.4, 0.5);
+  animation: jump 5s cubic-bezier(0.8, 0.8, 0.4, 0.5);
+}
+
+.ball_color-yellow:hover {
+  -webkit-animation: jump 3s cubic-bezier(0.8, 0.8, 0.4, 0.5);
+  animation: jump 3s cubic-bezier(0.8, 0.8, 0.4, 0.5);
+}
 
 @-webkit-keyframes jump {
   0% {
